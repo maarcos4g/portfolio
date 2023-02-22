@@ -1,6 +1,7 @@
 // "use client"
 
 import { ShowFile } from "@/components/ShowFile";
+import Image from "next/image";
 // import { useState } from "react";
 
 export const metadata = {
@@ -43,7 +44,10 @@ export default async function Profile() {
 
       <div className="w-full h-full flex justify-center py-20 px-10">
         <div className="flex flex-col px-4 py-2">
-          <img src={data.avatar_url} alt="Avatar" className="w-32 h-32 rounded-full border-[3px] border-blue-400" />
+          <Image src={data.avatar_url}
+            alt="Avatar" className="rounded-full border-[3px] border-blue-400"
+            width={128} height={128}
+          />
           <span className="text-zinc-50 font-bold text-xl mt-4">
             {data.name}, {data.public_repos} repositórios
           </span>

@@ -3,6 +3,7 @@
 import { ShowFile } from "@/components/ShowFile";
 import dayjs from "dayjs";
 import { GitFork, Star } from "lucide-react";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export const metadata = {
@@ -65,7 +66,10 @@ export default function Repository({ params }: ProfileProps) {
           <div className="bg-white p-2 border-[3px] rounded-sm border-gray-200 flex flex-col items-center gap-3 max-w-xl">
 
             <div className="flex items-start">
-              <img src={repo?.owner.avatar_url} alt="" className="w-16 h-16 rounded-full" />
+              <Image src={repo?.owner.avatar_url || "https://avatars.githubusercontent.com/u/56725656?v=4"}
+                alt="Avatar" className="rounded-full"
+                width={64} height={64}
+              />
 
               <div className="ml-4 items-start justify-start">
                 <div className="flex flex-col gap-2 items-start">
@@ -82,7 +86,7 @@ export default function Repository({ params }: ProfileProps) {
 
                   <div className="w-full flex gap-2">
                     {repo?.topics.map((topic) => (
-                      <span className="bg-blue-800/30 text-blue-800 text-xs font-bold px-2 py-1 rounded-2xl">
+                      <span key={topic} className="bg-blue-800/30 text-blue-800 text-xs font-bold px-2 py-1 rounded-2xl">
                         {topic}
                       </span>
                     ))}
