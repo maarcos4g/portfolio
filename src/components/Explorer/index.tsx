@@ -49,12 +49,12 @@ export function Explorer() {
                 <File href={`/repo/${repo.name}`} key={repo.name}>
                   <Github size={16} />
                   <span className="whitespace-nowrap overflow-hidden text-ellipsis">
-                    {repo.name}
+                    {repo.name}.tsx
                   </span>
                 </File>
               ))}
             </ScrollArea.Viewport>
-            <ScrollArea.Scrollbar className="flex select-none touch-none p-2 bg-transparent" orientation="vertical">
+            <ScrollArea.Scrollbar className="flex sealect-none touch-none p-2 bg-transparent" orientation="vertical">
               <ScrollArea.Thumb className="flex-1 bg-black rounded-lg relative" />
             </ScrollArea.Scrollbar>
             <ScrollArea.Corner className="bg-gray-300" />
