@@ -66,6 +66,7 @@ export default async function Profile() {
           <div className="flex items-start justify-end mt-3">
             <a href={data.html_url}
               target="_blank"
+              rel="noreferrer"
               className="bg-blue-300 px-4 py-3 rounded-3xl font-bold text-gray-800 outline-none cursor-pointer">
               Ver perfil completo no github
             </a>
