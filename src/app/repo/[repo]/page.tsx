@@ -7,7 +7,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export const metadata = {
-  title: 'Perfil',
+  title: 'Repositório',
 }
 
 interface ProfileProps {
