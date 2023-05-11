@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: {
     default: 'Marcos Paulo',
-    template: '%s | Marcos Paulo'
+    template: 'Marcos Paulo | %s'
   },
   robots: {
     index: true,
