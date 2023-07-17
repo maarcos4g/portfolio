@@ -26,11 +26,6 @@ const socialLinks = [
     url: 'https://www.linkedin.com/in/maarcos4g/',
     icon: <Linkedin size={14} />
   },
-  {
-    name: 'twitter',
-    url: 'https://twitter.com/themarcosp',
-    icon: <Twitter size={14} />
-  },
 ]
 
 export function SocialLinksMenuButton() {
